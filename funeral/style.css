@@ -185,3 +185,24 @@ section h2 { color: #6b4f4f; font-family: 'Georgia', serif; font-size: 1.7em; ma
 .header-logo-title h1 {
   margin: 0;
 }
+/* Footer layout with right-aligned logo */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  height: 48px;
+  margin-left: 2em;
+}
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .footer-logo {
+    margin-left: 0;
+  }
+}

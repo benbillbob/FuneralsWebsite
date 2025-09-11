@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funeral Music Videos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Funeral Music Videos</h1>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Funeral Programs</a></li>
+        <li><a href="songs.html">Funeral Songs</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section">
+      <h2>Featured Funeral Music Videos</h2>
+      <div class="videos">
+        <div class="video-item">
+          <div class="video-title">Ave Maria - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/5OkwrXCoHjA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Ave Maria - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/r5PseA1YR6Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Ave Maria - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/m0fJwJ90cS8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Danny Boy - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/UMXQYdV79tQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">How Great Thou Art - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/AJSRP_SR-kM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">On Eagles Wings - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/T3uu7qxtVeU" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">The Lord is My Shepherd - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/_-p1LmNRp6U" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">The Prayer - Natalie Claire</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/5RNuhEdoq_Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">The Rose</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/bUnn34J1k7w" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Caruso</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ze7rCSVoWRY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Panis Angelicus</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/aek8O8YV8RY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Hail Mary - Gentle Woman</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/PdyQZVp257I" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Cantabile Choir Liturgical Music Show reel</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/LsPbuAif5J4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <div class="video-title">Instrumental Music Show-reel</div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/cmusBjamSCo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Natalie Claire Entertainment. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/sydneymusiciansforhire/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/natalieclaireentertainment/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@natalieclaireentertainment?si=JkbKpxHMxLNeiEEz" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script>
+    // Close menu when clicking outside or pressing Escape
+    document.addEventListener('click', function(e) {
+      const menu = document.querySelector('nav ul');
+      const toggle = document.querySelector('.menu-toggle');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelector('nav ul').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

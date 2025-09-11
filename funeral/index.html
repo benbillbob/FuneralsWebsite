@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sydney Funeral Musicians</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sydney Funeral Musicians</h1>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Funeral Programs</a></li>
+        <li><a href="songs.html">Funeral Songs</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <img class="hero-img" src="Images\Sydney-Funeral-Musicians.jpg" alt="White floral arrangement" />
+      <div class="hero-content">
+        <h2 style="font-family:'Georgia',serif;font-size:2em;color:#6b4f4f;margin-top:0;">Welcome</h2>
+        <p>I am a professional Sydney funeral singer and church singer. My funeral musicians and I perform in Sydney, Wollongong and surrounding areas.</p>
+        <p>I understand how emotional arranging music for a loved one can be. Each funeral is very personal to me and I will do my utmost to support you during this difficult time.</p>
+        <p>I have a large network of outstanding Sydney funeral musicians who I can provide to play the accompaniment. We are experienced and have the particular performance skills necessary to facilitate a seamless funeral service. We have a special type of understanding that can only come with experience.</p>
+        <p>I can guide you through the service with sensitivity and help you to choose music that is appropriate for the memorial service. We have a large repertoire of funeral music or can perform a special song, chosen by you and your family to reflect the life of your loved one. I ensure that the musical ambiance I create is unobtrusive and honors the memory of those who have passed.</p>
+        <p>Email <a href="mailto:natalie@natalieclaire.com.au">natalie@natalieclaire.com.au</a> or text 0415 796 095 for an immediate response.</p>
+      </div>
+      <img class="floral-accent" src="Images\Sydney-Funeral-Musicians.jpg" alt="Floral accent" />
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Natalie Claire Entertainment. All rights reserved.</p>
+    <p>
+      <a href="https://www.facebook.com/sydneymusiciansforhire/">Facebook</a> |
+      <a href="https://www.instagram.com/natalieclaireentertainment/">Instagram</a> |
+      <a href="https://youtube.com/@natalieclaireentertainment">YouTube</a>
+    </p>
+  </footer>
+  <script>
+    // Close menu when clicking outside or pressing Escape
+    document.addEventListener('click', function(e) {
+      const menu = document.querySelector('nav ul');
+      const toggle = document.querySelector('.menu-toggle');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelector('nav ul').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

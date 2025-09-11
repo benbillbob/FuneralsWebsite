@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Testimonials</h1>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Funeral Programs</a></li>
+        <li><a href="songs.html">Funeral Songs</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="testimonials-section">
+      <h2>Recent Testimonials</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-card">“You and your choir are amazing! Each of the songs created an emotion that gave us joy in their grief. The choir and the musicians made it a true celebration of my Mum’s life not just a mass service. The work between your choir and the bagpiper was described as ‘opening the gates to heaven’ by my family.”<span class="testimonial-author">– Paul Pham</span></div>
+        <div class="testimonial-card">“Her singing was superb, adding enormously to the ambiance, character and quality of the service. Natalie was very professional, flexible and caring in response to the family’s ideas, including working so well with the other musician we had selected. The music was a very important part of the service – her singing was truly amazing.”<span class="testimonial-author">– Christine Murphy</span></div>
+        <div class="testimonial-card">“The music added so much to the ambience of the service. Camilla and Mirek are not only wonderful performers but also extremely professional and respectful given the context of a funeral.”<span class="testimonial-author">– Louise Upton</span></div>
+        <div class="testimonial-card">“The choir was absolutely perfect and thank you for being a dream to work with.”<span class="testimonial-author">– Kylee</span></div>
+        <div class="testimonial-card">“Camilla sang so beautifully and Gerard played perfectly. They were both so fantastic. Camilla was lovely and even said she enjoyed the video and service. I can’t thank you enough. Everyone said during and after how wonderful the music was.”<span class="testimonial-author">– Melanie Remai</span></div>
+        <div class="testimonial-card">“The introductory music they played leading in was profoundly and beautifully reflective. They made a terrific contribution to the service – and really did major work in making the occasion what it was.”<span class="testimonial-author">– Michael and Fran</span></div>
+        <div class="testimonial-card">“Your contribution to our day was nothing short of spectacular. Thank you so very much for all your research, practise, and exceptional delivery of all. I bawled at Hymn to Her. You executed that beautifully.”<span class="testimonial-author">– Kathryn Barton</span></div>
+        <div class="testimonial-card">“Your singing is glorious and the violinist and organist created serenity and joy. I also very much appreciated your attentiveness and professionalism in the lead up to the funeral.”<span class="testimonial-author">– Matha Halliday</span></div>
+        <div class="testimonial-card">“Our whole family would like to thank you very much for making our mum’s funeral so special. I know mum would have loved it. The choir was more beautiful than we could imagine.”<span class="testimonial-author">– Stella Testa</span></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Natalie Claire Entertainment. All rights reserved.</p>
+  </footer>
+  <script>
+    // Close menu when clicking outside or pressing Escape
+    document.addEventListener('click', function(e) {
+      const menu = document.querySelector('nav ul');
+      const toggle = document.querySelector('.menu-toggle');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelector('nav ul').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

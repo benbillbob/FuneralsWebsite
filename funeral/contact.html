@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Funeral Programs</a></li>
+        <li><a href="songs.html">Funeral Songs</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:natalie@natalieclaire.com.au">natalie@natalieclaire.com.au</a></p>
+      <p>Phone: <a href="tel:0415796095">0415 796 095</a></p>
+      <p>We are available to perform most days of the week.</p>
+      <p>Follow us:
+        <a href="https://www.facebook.com/sydneymusiciansforhire/">Facebook</a> |
+        <a href="https://www.instagram.com/natalieclaireentertainment/">Instagram</a> |
+        <a href="https://youtube.com/@natalieclaireentertainment">YouTube</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Natalie Claire Entertainment. All rights reserved.</p>
+  </footer>
+  <script>
+    // Close menu when clicking outside or pressing Escape
+    document.addEventListener('click', function(e) {
+      const menu = document.querySelector('nav ul');
+      const toggle = document.querySelector('.menu-toggle');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelector('nav ul').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funeral Songs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Funeral Songs</h1>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Funeral Programs</a></li>
+        <li><a href="songs.html">Funeral Songs</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section">
+      <h2>Secular Songs</h2>
+      <ul>
+        <li>After All These Years (Foster & Allen)</li>
+        <li>Angel (Sarah McLachlan)</li>
+        <li>Angels (Robbie Williams)</li>
+        <li>Because You Loved Me (Celine Dion)</li>
+        <li>Bridge Over Troubled Water (Simon and Garfunkel)</li>
+        <li>Candle In The Wind (Elton John)</li>
+        <li>Danny Boy (Traditional)</li>
+        <li>Fields of Gold (Eva Cassidy)</li>
+        <li>Goodbye is the Saddest Word (Celine Dion)</li>
+        <li>Heaven (DJ Sammy & Yanou – Candlelight Mix)</li>
+        <li>How Long Will I Love You (Ellie Goulding)</li>
+        <li>Immortality (Celine Dion)</li>
+        <li>My Way (Frank Sinatra)</li>
+        <li>Photograph (Ed Sheeran)</li>
+        <li>The Prayer (Anthony Callea/Celine Dion/Andrea Bocelli)</li>
+        <li>The Rose (Bette Midler)</li>
+        <li>The Wind Beneath My Wings (Bette Midler)</li>
+        <li>Time To Say Goodbye (Andrea Bocelli & Sarah Brightman)</li>
+        <li>Unforgettable (Nat King Cole & Natalie Cole)</li>
+        <li>What a Wonderful World</li>
+        <li>You Raise Me Up (Josh Groban)</li>
+        <li>You’ll Never Walk Alone (Gerry & The Pacemakers)</li>
+      </ul>
+      <h2>Church Hymns</h2>
+      <ul>
+        <li>Abide with Me</li>
+        <li>Amazing Grace</li>
+        <li>Ave Maria (Schubert or Gonoud/Bach)</li>
+        <li>Be Not Afraid</li>
+        <li>How Great Thou Art</li>
+        <li>On Eagles Wings (Joncas)</li>
+        <li>Panis Angelicus</li>
+        <li>Praise My Soul the King of Heaven</li>
+        <li>The Lord is My Shepherd (Boniwell, Irvine or Goodall)</li>
+        <li>The Old Rugged Cross</li>
+        <li>What a Beautiful Name (Hillsong)</li>
+      </ul>
+      <p>Natalie is happy to organise performances of requested songs not on the above list.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Natalie Claire Entertainment. All rights reserved.</p>
+  </footer>
+  <script>
+    // Close menu when clicking outside or pressing Escape
+    document.addEventListener('click', function(e) {
+      const menu = document.querySelector('nav ul');
+      const toggle = document.querySelector('.menu-toggle');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelector('nav ul').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

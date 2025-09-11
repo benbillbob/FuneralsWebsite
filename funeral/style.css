@@ -165,3 +165,23 @@ section h2 { color: #6b4f4f; font-family: 'Georgia', serif; font-size: 1.7em; ma
 .social-links a:hover {
   color: #2d2d2d;
 }
+/* Header logo image */
+.site-logo {
+  height: 60px;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+/* Center logo and title in header */
+.header-logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.site-logo {
+  height: 60px;
+  margin: 0 0 0.5em 0;
+}
+.header-logo-title h1 {
+  margin: 0;
+}

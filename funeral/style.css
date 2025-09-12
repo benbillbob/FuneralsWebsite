@@ -92,24 +92,26 @@ section h2 { color: #6b4f4f; font-family: 'Georgia', serif; font-size: 1.7em; ma
   .hero-img { margin: 0 0 1em 0; }
 }
 @media (max-width: 700px) {
-  header h1 {
-    font-size: 1.4em;
+  /* Header Flex Layout */
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
-  nav ul {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 70vw;
-    background: rgba(255,255,255,0.97);
+  .header-logo-title-centered {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-shadow: -2px 0 16px rgba(0,0,0,0.08);
-    padding: 3em 2em 2em 2em;
-    margin: 0;
-    z-index: 1000;
+    align-items: center;
+    flex: 1;
+  }
+  .header-social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    position: absolute;
+    top: 50%;
   }
   nav ul.open {
     display: flex;
@@ -185,24 +187,85 @@ section h2 { color: #6b4f4f; font-family: 'Georgia', serif; font-size: 1.7em; ma
 .header-logo-title h1 {
   margin: 0;
 }
-/* Footer layout with right-aligned logo */
+/* Center logo and title in header even with flex parent */
+.header-logo-title-centered {
+  align-items: center !important;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.header-logo-title-centered h1 {
+  margin: 0;
+}
+/* Footer layout: center copyright/socials, logo right on wide screens */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 2em;
+}
+.footer-content > div {
+  text-align: center;
 }
 .footer-logo {
   height: 48px;
-  margin-left: 2em;
+  margin-left: 0;
+  margin-top: 0;
 }
 @media (max-width: 600px) {
   .footer-content {
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
+    gap: 0.5em;
   }
   .footer-logo {
     margin-left: 0;
+    margin-top: 0.5em;
+  }
+}
+/* Header layout with socials right */
+/* Header layout with socials right */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.header-logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-social-links {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-social-links a {
+  color: #6b4f4f;
+  transition: color 0.2s;
+}
+.header-social-links a:hover {
+  color: #2d2d2d;
+}
+@media (max-width: 700px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    position: static;
+  }
+  .header-social-links {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
+    margin-top: 0.5em;
+    align-self: flex-end;
   }
 }

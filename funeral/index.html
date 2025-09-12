@@ -7,33 +7,35 @@
   <title>Sydney Funeral Musicians</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="materialize-overrides.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <header>
-    <div class="header-flex">
-      <div class="header-logo-title header-logo-title-centered">
-        <img src="Logo-dark.png" alt="Natalie Claire Entertainment Logo" class="site-logo" aria-label="Site Logo" />
-        <h1>Home</h1>
+    <nav class="nav-extended white z-depth-1">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo" aria-label="Home">
+          <img src="Logo-dark.png" alt="Natalie Claire Entertainment Logo" class="site-logo" style="height:40px;vertical-align:middle;" />
+          <span style="margin-left:10px;color:#6b4f4f;font-weight:600;">Natalie Claire Entertainment</span>
+        </a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open menu"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Funeral Programs</a></li>
+          <li><a href="songs.html">Funeral Songs</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <div class="header-social-links">
-        <a href="https://www.facebook.com/sydneymusiciansforhire/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/natalieclaireentertainment/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com/@natalieclaireentertainment?si=JkbKpxHMxLNeiEEz" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-    <nav id="main-nav" role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programs.html">Funeral Programs</a></li>
-        <li><a href="songs.html">Funeral Songs</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
     </nav>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Funeral Programs</a></li>
+      <li><a href="songs.html">Funeral Songs</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </header>
   <main>
     <div class="hero">
@@ -75,5 +77,11 @@
       </div>
     </div>
   </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+  });
+  </script>
   </body>
 </html>

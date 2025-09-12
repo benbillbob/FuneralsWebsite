@@ -2,7 +2,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 
 /* Custom overrides for funeral musicians site */
-
+body{
+    background: url('church-bg.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh; 
+    background-color: #fffaf0; /* Soft, warm background */
+}
 .header-logo-title-centered {
   text-align: center;
 }
@@ -43,4 +46,29 @@
 }
 nav {
   background-color: #f8f4f0 !important; /* Soft, warm neutral */
+}
+
+/* Modern Materialize nav bar hover animation */
+nav ul li a {
+  position: relative;
+  transition: color 0.2s;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #6b4f4f; /* Accent color */
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #6b4f4f !important;
+}
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  transform: scaleX(1);
 }

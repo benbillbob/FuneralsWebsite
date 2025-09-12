@@ -13,28 +13,31 @@
 </head>
 <body>
   <header>
-    <div class="header-flex">
-      <div class="header-logo-title header-logo-title-centered">
-        <img src="Logo-dark.png" alt="Natalie Claire Entertainment Logo" class="site-logo" aria-label="Site Logo" />
-        <h1>Funeral Songs</h1>
+    <nav class="nav-extended white z-depth-1">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo" aria-label="Home">
+          <img src="Logo-dark.png" alt="Natalie Claire Entertainment Logo" class="site-logo" style="height:40px;vertical-align:middle;" />
+          <span style="margin-left:10px;color:#6b4f4f;font-weight:600;">Natalie Claire Entertainment</span>
+        </a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open menu"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Funeral Programs</a></li>
+          <li><a href="songs.html">Funeral Songs</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <div class="header-social-links">
-        <a href="https://www.facebook.com/sydneymusiciansforhire/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/natalieclaireentertainment/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com/@natalieclaireentertainment?si=JkbKpxHMxLNeiEEz" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-    <nav id="main-nav" role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programs.html">Funeral Programs</a></li>
-        <li><a href="songs.html">Funeral Songs</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
     </nav>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Funeral Programs</a></li>
+      <li><a href="songs.html">Funeral Songs</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </header>
   <main>
     <section class="main-section container">
@@ -100,5 +103,11 @@
       </div>
     </div>
   </footer>
-  </body>
-  </html>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(elems);
+});
+</script>
+</body>
+</html>

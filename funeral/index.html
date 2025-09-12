@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sydney Funeral Musicians</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -34,16 +35,22 @@
   </header>
   <main>
     <div class="hero">
-      <img class="hero-img" src="Images\Sydney-Funeral-Musicians.jpg" alt="White floral arrangement" />
-      <div class="hero-content">
-        <h2 style="font-family:'Georgia',serif;font-size:2em;color:#6b4f4f;margin-top:0;">Welcome</h2>
-        <p>I am a professional Sydney funeral singer and church singer. My funeral musicians and I perform in Sydney, Wollongong and surrounding areas.</p>
-        <p>I understand how emotional arranging music for a loved one can be. Each funeral is very personal to me and I will do my utmost to support you during this difficult time.</p>
-        <p>I have a large network of outstanding Sydney funeral musicians who I can provide to play the accompaniment. We are experienced and have the particular performance skills necessary to facilitate a seamless funeral service. We have a special type of understanding that can only come with experience.</p>
-        <p>I can guide you through the service with sensitivity and help you to choose music that is appropriate for the memorial service. We have a large repertoire of funeral music or can perform a special song, chosen by you and your family to reflect the life of your loved one. I ensure that the musical ambiance I create is unobtrusive and honors the memory of those who have passed.</p>
-        <p>Email <a href="mailto:natalie@natalieclaire.com.au">natalie@natalieclaire.com.au</a> or text 0415 796 095 for an immediate response.</p>
+      <div class="row align-items-center g-4">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <img class="hero-img img-fluid rounded shadow" src="Images/Sydney-Funeral-Musicians.jpg" alt="White floral arrangement" />
+        </div>
+        <div class="col-md-7">
+          <div class="hero-content p-3 p-md-4 bg-white bg-opacity-75 rounded shadow">
+            <h2 style="font-family:'Georgia',serif;font-size:2em;color:#6b4f4f;margin-top:0;">Welcome</h2>
+            <p>I am a professional Sydney funeral singer and church singer. My funeral musicians and I perform in Sydney, Wollongong and surrounding areas.</p>
+            <p>I understand how emotional arranging music for a loved one can be. Each funeral is very personal to me and I will do my utmost to support you during this difficult time.</p>
+            <p>I have a large network of outstanding Sydney funeral musicians who I can provide to play the accompaniment. We are experienced and have the particular performance skills necessary to facilitate a seamless funeral service. We have a special type of understanding that can only come with experience.</p>
+            <p>I can guide you through the service with sensitivity and help you to choose music that is appropriate for the memorial service. We have a large repertoire of funeral music or can perform a special song, chosen by you and your family to reflect the life of your loved one. I ensure that the musical ambiance I create is unobtrusive and honors the memory of those who have passed.</p>
+            <p>Email <a href="mailto:natalie@natalieclaire.com.au">natalie@natalieclaire.com.au</a> or text 0415 796 095 for an immediate response.</p>
+          </div>
+        </div>
       </div>
-      <img class="floral-accent" src="Images\Sydney-Funeral-Musicians.jpg" alt="Floral accent" />
+      <img class="floral-accent" src="Images/Sydney-Funeral-Musicians.jpg" alt="Floral accent" />
     </div>
   </main>
   <footer>
@@ -66,13 +73,35 @@
       const toggle = document.querySelector('.menu-toggle');
       if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
         menu.classList.remove('open');
-      }
-    });
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.querySelector('nav ul').classList.remove('open');
-      }
-    });
-  </script>
-</body>
-</html>
+      <header class="container-fluid py-3 bg-white border-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+            <img src="Logo-dark.png" alt="Natalie Claire Entertainment Logo" class="site-logo mb-2">
+            <h1 class="mb-0">Home</h1>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end align-items-center">
+            <div class="header-social-links">
+              <a href="https://www.facebook.com/sydneymusiciansforhire/" target="_blank" aria-label="Facebook" class="me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/natalieclaireentertainment/" target="_blank" aria-label="Instagram" class="me-3"><i class="fab fa-instagram"></i></a>
+              <a href="https://youtube.com/@natalieclaireentertainment" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light mt-3">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="programs.html">Funeral Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="songs.html">Funeral Songs</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>

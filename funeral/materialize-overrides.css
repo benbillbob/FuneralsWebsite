@@ -1,0 +1,46 @@
+/* Materialize CSS CDN for Material Design */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+
+/* Custom overrides for funeral musicians site */
+
+.header-logo-title-centered {
+  text-align: center;
+}
+.header-social-links a {
+  margin: 0 8px;
+}
+.footer-logo {
+  max-width: 100px;
+  margin-top: 10px;
+}
+.footer-links {
+  margin-top: 10px;
+}
+.hero-img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.floral-accent {
+  max-width: 80px;
+  margin: 20px auto;
+  display: block;
+}
+.main-section {
+  padding: 2rem 0;
+}
+.testimonial-card {
+  background: #fffbe9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.testimonial-author {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #6b4f4f;
+}
+nav {
+  background-color: #f8f4f0 !important; /* Soft, warm neutral */
+}

@@ -8,6 +8,11 @@ body{
 }
 .header-logo-title-centered {
   text-align: center;
+  color: #4a2e2e;
+  font-weight: 700;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 .header-social-links a {
   margin: 0 8px;
@@ -51,7 +56,11 @@ nav {
 /* Modern Materialize nav bar hover animation */
 nav ul li a {
   position: relative;
-  transition: color 0.2s;
+  color: #4a2e2e !important;
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s, background 0.2s;
 }
 nav ul li a::after {
   content: '';
@@ -66,9 +75,51 @@ nav ul li a::after {
 }
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #6b4f4f !important;
+  color: #fff !important;
+  background: #6b4f4f !important;
+  border-radius: 4px;
 }
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   transform: scaleX(1);
+}
+
+/* Mobile nav colors */
+.sidenav li a {
+  color: #4a2e2e !important;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.sidenav li a:hover,
+.sidenav li a:focus {
+  color: #fff !important;
+  background: #6b4f4f !important;
+  border-radius: 4px;
+}
+
+/* Footer: custom background color and adjusted foreground colors */
+.page-footer {
+  background-color: #83492d !important; /* Custom brown shade */
+  color: #f8f4f0 !important;
+}
+.page-footer .footer-links a {
+  color: #f8e3d6 !important;
+}
+.page-footer .footer-links a:hover,
+.page-footer .footer-links a:focus {
+  color: #fff !important;
+  text-decoration: underline;
+}
+.page-footer .footer-logo {
+  filter: brightness(0.9);
+}
+.page-footer .social-links a {
+  color: #f8e3d6 !important;
+}
+.page-footer .social-links a:hover,
+.page-footer .social-links a:focus {
+  color: #fff !important;
+}
+.page-footer p {
+  color: #f8f4f0 !important;
 }

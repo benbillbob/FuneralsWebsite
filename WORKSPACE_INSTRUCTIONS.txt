@@ -1,6 +1,6 @@
 Workspace Instructions for Web Development:
 
-1. Always use Bootstrap for layout and styling.
+1. Always use Material for layout and styling.
 2. Do not change any text content unless explicitly requested.
 3. Make all headers and footers consistent across pages.
 4. Always self-close IMG tags.

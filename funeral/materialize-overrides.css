@@ -3,7 +3,7 @@
 
 /* Custom overrides for funeral musicians site */
 body{
-    background: url('church-bg.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh; 
+    background: url('Images/church-bg.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh; 
     background-color: #fffaf0; /* Soft, warm background */
 }
 .header-logo-title-centered {

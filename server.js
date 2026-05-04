@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 3001;
+const HOST = '0.0.0.0';
 const BASE_DIR = path.join(__dirname, 'funeral');
 
 const mimeTypes = {
@@ -33,6 +34,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, HOST, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Accessible on your local network at http://<your-local-ip>:${PORT}/`);
 });
